@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#posts-container {
+    display: grid;
+    gap: 20px;
+}
+
+.post {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fafafa;
+    transition: transform 0.2s;
+}
+
+.post:hover {
+    transform: scale(1.02);
+}
+
+.post-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.post-user {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.post-body {
+    margin-bottom: 10px;
+}
+
+.post-comments {
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #f4f4f4;
+    position: relative;
+    bottom: 0;
+}
+
+/* scrollbar modification */
+
+/* Entire scrollbar */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the vertical scrollbar */
+    height: 12px; /* Height of the horizontal scrollbar */
+}
+
+/* Track (background of the scrollbar) */
+::-webkit-scrollbar-track {
+    background: #ffffff; 
+}
+
+/* Handle (scroll thumb) */
+::-webkit-scrollbar-thumb {
+    background: #007BFF; 
+    border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #007BFF; 
+}
+
